@@ -16,7 +16,7 @@ function draw() {
   background(0, 0, 0, 25);
   
   if (random(1) < 0.03) {
-    fireworks.push(new Firework());
+    fireworks.push(new Firework(random(width)));
   }
   
   for (var i = fireworks.length - 1; i >= 0; i--) {
@@ -27,4 +27,7 @@ function draw() {
       fireworks.splice(i, 1);
     }
   }
+}
+function mousePressed(){
+  fireworks.push(new Firework(mouseX));
 }
