@@ -1,7 +1,7 @@
 //Nicholas Huaman
-function Firework() {
+function Firework(wid123) {
   this.hu = random(255);
-  this.firework = new Particle(random(width), window.innerHeight, this.hu, true);
+  this.firework = new Particle(wid123, window.innerHeight, this.hu, true);
   this.exploded = false;
   this.particles = [];
 
