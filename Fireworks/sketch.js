@@ -31,3 +31,6 @@ function draw() {
 function mousePressed(){
   fireworks.push(new Firework(mouseX));
 }
+function mouseDragged(){
+  fireworks.push(new Firework(mouseX));
+}
